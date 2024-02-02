@@ -24,6 +24,10 @@ RUN yum update -y && \
     yum -y install java-1.8.0-openjdk && \
     pip install --upgrade pip && pip install boto3 && \
     pip install pyspark==$PYSPARK_VERSION && \
+    pip install sagemaker_pyspark && \
+    pip install pandas && \
+    pip install pydeequ && \
+    pip install plotly && \
     yum clean all
 
 
